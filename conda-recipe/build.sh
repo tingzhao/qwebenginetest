@@ -22,6 +22,7 @@ app_name=qwebenginetest
 echo "Build flag: $build_flag"
 bash -x -e build.sh ${PREFIX}/bin/qmake ${QMAKE_SPEC_PATH} -q "$additional_qflag"
 
+build_dir=build
 # Install to conda environment
 if [ $(uname) == 'Darwin' ]; then
     mv ${build_dir}/${app_name}.app ${PREFIX}/bin/
