@@ -10,4 +10,6 @@ unix {
   }
 }
 
+TARGET = qwebenginetest
+
 SOURCES = main.cpp

@@ -17,6 +17,7 @@ else
     QMAKE_SPEC_PATH=${PREFIX}/mkspecs/linux-g++-64
 fi
 
+app_name=qwebenginetest
 
 echo "Build flag: $build_flag"
 bash -x -e build.sh ${PREFIX}/bin/qmake ${QMAKE_SPEC_PATH} -q "$additional_qflag"
