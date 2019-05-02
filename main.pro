@@ -10,6 +10,13 @@ unix {
   }
 }
 
+exists($${CONDA_ENV}) {
+  message("Using conda $${CONDA_ENV}")
+  INCLUDEPATH += $${CONDA_ENV}/include
+  LIBS += -L$${CONDA_ENV}/lib
+  unix: QMAKE_RPATHDIR *= $${CONDA_ENV}/lib
+}
+
 TARGET = qwebenginetest
 
 SOURCES = main.cpp
