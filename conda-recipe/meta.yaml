@@ -21,9 +21,17 @@ requirements:
 
   host:
     - qt      5.9*
+    - alsa-lib
+    - xorg-libxrandr
+    - xorg-libxcursor
+    - xorg-libxtst
 
   run:
     - qt      5.9*
+    - alsa-lib
+    - xorg-libxrandr
+    - xorg-libxcursor
+    - xorg-libxtst
 
 about:
   license: GPL
